@@ -32,11 +32,72 @@
     </head>
 
     <body>
-        <header></header>
-        <main></main>
+        <header>
+            <div class="header-container">
+                <h1 class="header-title poppins-bold">Kira-Kira Juku</h1>
+                <!--ハンバーガーボタン-->
+                <div class="hamburger-button-container">
+                    <button type="button" class="hamburger-button">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+                <!--ドロワーメニュー-->
+                <div class="drawer-menu-container">
+                    <nav class="drawer-menu header-nav">
+                        <!--1つ目-->
+                        <li><a href="#">
+                                <i class="bi bi-arrow-right-short"></i>
+                                <span class="drawer-menu-text">選ばれる3つの理由</span>
+                            </a></li>
+                        <!--2つ目-->
+                        <li><a href="#">
+                                <i class="bi bi-arrow-right-short"></i>
+                                <span class="drawer-menu-text">コース・目的</span>
+                            </a></li>
+                        <!--3つ目-->
+                        <li><a href="#">
+                                <i class="bi bi-arrow-right-short"></i>
+                                <span class="drawer-menu-text">費用</span>
+                            </a></li>
+                    </nav>
+                    <!--入学説明会ボタン-->
+                    <button type="button" href="#" class="button drawer-menu-button">入学説明会に申し込む</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="cover">
+                <!--カバー画像-->
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./assets/images/mainVIsual_PC.png">
+                    <img src="./assets/images/mainVIsual_SP.png" alt="制服を着た女の子の写真">
+                </picture>
+                <!--左側の文字列・装飾-->
+                <div class="cover-left-container">
+                    <div class="cover-left-top">
+                        <img src="./assets/images/frame-left.png" alt="月桂樹のフレームの左側" class="cover-frame left">
+                        <span class="cover-frame-inside-subtext">難関大学の合格実績</span>
+                        <span class="cover-frame-inside-no-1 poppins-extrabold-italic">No.<span class="letter-big">1</span></span>
+                        <img src="./assets/images/frame-right.png" alt="月桂樹のフレームの右側" class="cover-frame right">
+                    </div>
+                    <div class="cover-left-bottom">
+                        <span class="cover-left-bottom-subtext">現役高校生・高卒生</span>
+                        <span class="cover-bottom-left-text">入学説明会の<br>お申し込み開始</span>
+                    </div>
+                </div>
+                <!--ボタン群-->
+                <div class="buttons-container">
+                    <button type="button" href="#" class="button addmission-inquiry">入学のお問い合わせ</button>
+                    <button type="button" href="#" class="button free-trial">無料体験に申し込む</button>
+                    <button type="button" href="#" class="button request-information">資料請求する</button>
+                </div>
+            </div>
+
+        </main>
         <footer></footer>
         <!--JQuery-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!--js-->
         <script src="./assets/js/main.js"></script>
     </body>
