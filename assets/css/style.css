@@ -1,0 +1,80 @@
+/*lp1-CSS*/
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------ */
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a,
+a:hover,
+a i {
+    transition: all 0.3s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+
+}
+
+li {
+    list-style: none;
+}
+
+
+/*フォント
+--------------------------------------*/
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.noto-sans-jp-medium {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.noto-sans-jp-bold {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.noto-sans-jp-black {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
