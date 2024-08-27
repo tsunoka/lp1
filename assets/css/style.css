@@ -43,6 +43,17 @@ li {
     margin: 5px auto;
 }
 
+/*PC表示*/
+/*@media(min-width:768px) {
+    .button {
+        width: 180px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 12px;
+        padding: 0 30px;
+        margin: auto;
+    }
+}*/
 
 /*フォント
 --------------------------------------*/
@@ -98,10 +109,11 @@ li {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 20%);
 }
 
 .header-title {
@@ -111,59 +123,104 @@ li {
     margin: auto 0;
 }
 
-.hamburger-button-container {
-    background-color: #005BAC;
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    padding-top: 3px;
+/*ハンバーガーボタン（SP表示のみ）*/
+@media(max-width:767px) {
+    .hamburger-button-container {
+        background-color: #005BAC;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        padding-top: 3px;
+    }
+
+    .hamburger-button {
+        font-size: 50px;
+        color: #fff;
+    }
+
+    /*ドロワーメニュー*/
+    .drawer-menu-container {
+        position: fixed;
+        top: 84px;
+        left: 0;
+        right: 0;
+        background-color: #005BAC;
+
+        transition: opacity .3s linear;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .drawer-menu li a {
+        display: block;
+        color: #fff;
+        border-bottom: solid 1px #fff;
+        margin: 0 10px;
+        padding: 20px;
+        line-height: 1rem;
+    }
+
+    .drawer-menu i {
+        font-size: 25px;
+
+    }
+
+    .drawer-menu-button {
+        background-color: #fff;
+        color: #005BAC;
+        display: block;
+        margin: 30px auto;
+        width: 90%;
+        box-sizing: border-box;
+
+        font-size: 20px;
+    }
+
+    /* スライドイン後の位置の指定 */
+    .drawer-menu-active {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
-.hamburger-button {
-    font-size: 50px;
-    color: #fff;
-}
+/*ナビゲーションメニュー（PC表示のみ）*/
+@media(min-width:768px) {
 
-/*ドロワーメニュー*/
-.drawer-menu-container {
-    position: fixed;
-    top: 84px;
-    left: 0;
-    right: 0;
-    background-color: #005BAC;
+    .header-container {
+        padding: 0 10%;
+    }
 
-    transition: opacity .3s linear;
-    opacity: 0;
-    visibility: hidden;
-}
+    /*ハンバーガーメニューを非表示に*/
+    .hamburger-button-container {
+        display: none;
+    }
 
-.drawer-menu li a {
-    display: block;
-    color: #fff;
-    border-bottom: solid 1px #fff;
-    margin: 0 10px;
-    padding: 20px;
-    line-height: 1rem;
-}
+    /*矢印アイコン*/
+    .header-nav i {
+        display: none;
+    }
 
-.drawer-menu i {
-    font-size: 25px;
+    .header-nav-container {
+        display: flex;
+        column-gap: 15px;
+    }
 
-}
+    .header-nav {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        column-gap: 15px;
+    }
 
-.drawer-menu-button {
-    background-color: #fff;
-    color: #005BAC;
-    display: block;
-    margin: 30px auto;
-    width: 90%;
-    box-sizing: border-box;
+    .header-nav-button {
+        background: linear-gradient(to right, #0271E0, #53A2F0);
+        width: 180px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 12px;
+        padding: 0 30px;
+        margin: auto;
 
-    font-size: 20px;
-}
 
-/* スライドイン後の位置の指定 */
-.drawer-menu-active {
-    opacity: 1;
-    visibility: visible;
+    }
 }
