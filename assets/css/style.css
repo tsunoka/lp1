@@ -33,6 +33,16 @@ li {
     list-style: none;
 }
 
+/* 使いまわすもの
+------------------------------------------ */
+
+.button {
+    border-radius: 3rem;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px auto;
+}
+
 
 /*フォント
 --------------------------------------*/
@@ -77,4 +87,83 @@ li {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 900;
     font-style: normal;
+}
+
+
+/* ヘッダー
+------------------------------------------ */
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.header-title {
+    color: #005BAC;
+    font-size: 23px;
+    padding: 20px 10px;
+    margin: auto 0;
+}
+
+.hamburger-button-container {
+    background-color: #005BAC;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    padding-top: 3px;
+}
+
+.hamburger-button {
+    font-size: 50px;
+    color: #fff;
+}
+
+/*ドロワーメニュー*/
+.drawer-menu-container {
+    position: fixed;
+    top: 84px;
+    left: 0;
+    right: 0;
+    background-color: #005BAC;
+
+    transition: opacity .3s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.drawer-menu li a {
+    display: block;
+    color: #fff;
+    border-bottom: solid 1px #fff;
+    margin: 0 10px;
+    padding: 20px;
+    line-height: 1rem;
+}
+
+.drawer-menu i {
+    font-size: 25px;
+
+}
+
+.drawer-menu-button {
+    background-color: #fff;
+    color: #005BAC;
+    display: block;
+    margin: 30px auto;
+    width: 90%;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+/* スライドイン後の位置の指定 */
+.drawer-menu-active {
+    opacity: 1;
+    visibility: visible;
 }
