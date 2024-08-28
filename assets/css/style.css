@@ -127,15 +127,15 @@ li {
 @media(min-width:768px) {
 
     .header-container {
-        padding: 0 152px;
+        padding: 0 20%;
         white-space: nowrap;
     }
 
     .header-title {
-        margin: auto 0;
+        margin: auto -4px;
         padding-left: 0;
-        font-size: 14px;
-    }
+        font-size: 33px;
+        }
 }
 
 /*ハンバーガーボタン（SP表示のみ）*/
@@ -226,19 +226,22 @@ li {
     .header-nav {
         display: flex;
         align-items: center;
-        font-size: 8px;
-        column-gap: 23px;
-    }
+        font-size: 19px;
+        letter-spacing: 1px;
+        column-gap: 48px;
+        width: 459px;
+        box-sizing: border-box;
+        margin-top: 4px;    }
 
     .header-nav-button {
         background: linear-gradient(to right, #0271E0, #53A2F0);
-        width: 113px;
-        height: 25px;
+        width: 279px;
+        height: 65px;
         box-sizing: border-box;
-        font-size: 8px;
+        font-size: 20px;
         padding: 0;
-        margin: 8px auto;
-    }
+        margin: 17px auto;
+        }
 }
 
 /* Cover
@@ -247,25 +250,40 @@ li {
 /*全体*/
 .cover {
     margin-top: 70px;
+    position:relative;
 }
 
 /*カバー画像*/
-.cover picture {
-    position: relative;
-}
 
-.cover picture img{
-    height:248px;
-    width:auto;
-    margin: 0 auto;
+/*SP*/
+@media(max-width:767px){
+    .cover picture img{
+        height:250px;
+        width:auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
 }
 
 .cover-left-container {
     position: absolute;
-    top: 90px;
+    top: 4%;
     left: 0;
-    margin-left: 15px;
+    margin-left: 16px;
 }
+
+/*PC*/
+@media(min-width:768px){
+    .cover{
+        margin-top: 104px;
+    }
+
+    .cover-left-container{
+        top: 13.5%;
+        left:20.5%;
+    }
+}
+
 
 /*画像左部の文字*/
 .cover-left-top {
@@ -296,6 +314,28 @@ li {
     font-size: 36px;
 }
 
+/*PC*/
+@media(min-width:768px){
+    .cover-frame{
+        height: 150px;
+    }
+
+    .cover-frame-inside-text{
+        font-size: 20px;
+        margin: 2px 20px;
+        row-gap: 34px;
+        }
+
+    .cover-frame-inside-no-1{
+        font-size: 55px;
+        margin-left: 13px;
+        }
+
+    .cover-frame-inside-no-1 .letter-big{
+        font-size: 83px;
+    }
+}
+
 /*申し込み開始（cover-left-bottom）*/
 .cover-left-bottom {
     display: flex;
@@ -312,17 +352,53 @@ li {
     font-size: 25px;
 }
 
+@media(min-width:768px){
+
+    .cover-left-bottom{
+        margin-top:26px;
+    }
+
+    .cover-left-bottom-subtext{
+        font-size: 35px;
+        margin-bottom:8px;
+    }
+
+    .cover-left-bottom-text{
+        font-size: 60.5px;
+        line-height:82px;
+    }
+}
+
 /*ボタン群*/
 .buttons-container {
     display: flex;
     flex-direction: column;
-    margin: 24px 0;
-    row-gap: 6px;
+    margin: 20px 0;
+    row-gap: 7px;
 }
 
 .buttons-container button {
     width: 250px;
+    white-space: nowrap;
     box-sizing: border-box;
+}
+
+@media(min-width:768px){
+    .buttons-container{
+        z-index:3;
+        flex-direction: row;
+        align-items: center;
+        margin: -70px 20%;
+        padding:20px 0;
+        }
+
+    .buttons-container button{
+        font-size: 24px;
+        width: 340px;
+        padding: 20px 0;
+    }
+
+
 }
 
 .button.addmission-inquiry {
