@@ -147,8 +147,6 @@ li {
         left: 0;
         right: 0;
         background-color: #005BAC;
-
-        transition: opacity .3s linear;
         opacity: 0;
         visibility: hidden;
     }
@@ -167,7 +165,8 @@ li {
         margin-left: -6px;
 
     }
-    .drawer-menu-text{
+
+    .drawer-menu-text {
         font-size: 18px;
         letter-spacing: 0.2px;
         margin-left: 4px;
@@ -199,7 +198,8 @@ li {
         padding: 0 152px;
         white-space: nowrap;
     }
-    .header-title{
+
+    .header-title {
         margin: auto 0;
         padding-left: 0;
         font-size: 14px;
@@ -236,4 +236,88 @@ li {
         padding: 0;
         margin: 8px auto;
     }
+}
+
+/* Cover
+------------------------------------------ */
+
+/*全体*/
+.cover {
+    margin-top: 70px;
+}
+
+/*カバー画像*/
+.cover picture{
+    position:relative;
+}
+
+.cover-left-container{
+    position:absolute;
+    top:90px;
+    left:0;
+    margin-left:15px;
+}
+
+/*画像左部の文字*/
+.cover-left-top{
+    display: flex;
+}
+
+/*合格実績No.1(cover-left-top)*/
+.cover-frame{
+    height:80px;
+}
+
+.cover-frame-inside-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 33px;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.cover-frame-inside-no-1{
+    color:#F11F8D;
+    font-size:20px;
+}
+
+.cover-frame-inside-no-1 .letter-big{
+    font-size:30px;
+}
+
+/*申し込み開始（cover-left-bottom）*/
+.cover-left-bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+}
+
+.cover-left-bottom-text{
+    color: #005BAC;
+    font-size: 26px;
+}
+
+/*ボタン群*/
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin:30px 0;
+}
+
+.buttons-container button{
+    width:250px;
+    box-sizing: border-box;
+}
+
+.button.addmission-inquiry {
+    background-color: #77CB33;
+}
+
+.button.free-trial {
+    background-color: #F6AA00;
+}
+
+.button.request-information {
+    background-color: #3AC8AD;
 }
