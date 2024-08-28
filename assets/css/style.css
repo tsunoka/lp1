@@ -196,7 +196,13 @@ li {
 @media(min-width:768px) {
 
     .header-container {
-        padding: 0 10%;
+        padding: 0 152px;
+        white-space: nowrap;
+    }
+    .header-title{
+        margin: auto 0;
+        padding-left: 0;
+        font-size: 14px;
     }
 
     /*ハンバーガーメニューを非表示に*/
@@ -217,19 +223,17 @@ li {
     .header-nav {
         display: flex;
         align-items: center;
-        font-size: 10px;
-        column-gap: 15px;
+        font-size: 8px;
+        column-gap: 23px;
     }
 
     .header-nav-button {
         background: linear-gradient(to right, #0271E0, #53A2F0);
-        width: 180px;
-        height: 40px;
+        width: 113px;
+        height: 25px;
         box-sizing: border-box;
-        font-size: 12px;
-        padding: 0 30px;
-        margin: auto;
-
-
+        font-size: 8px;
+        padding: 0;
+        margin: 8px auto;
     }
 }
