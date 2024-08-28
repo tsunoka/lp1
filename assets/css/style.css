@@ -59,10 +59,24 @@ li {
     margin:20px 10px;
 }
 
+/*PC*/
+@media(min-width:768px){
+    .container{
+        margin:80px 20%;
+    }
+}
+
 .section-title{
     text-align: center;
     font-size: 30px;
     margin:25px 0;
+}
+
+/*PC*/
+@media(min-width:768px){
+    .section-title{
+        margin-bottom:30px;
+    }
 }
 
 /*フォント
@@ -436,6 +450,10 @@ li {
     margin-bottom:30px;
 }
 
+.point img{
+    border-radius: 1.5rem;
+}
+
 .point-text h3{
     color: #F11F8D;
     font-size:25px;
@@ -455,4 +473,16 @@ li {
 .point-discription{
     letter-spacing: 1px;
     font-size:16px;
+}
+
+/*PC*/
+@media(min-width:768px){
+    .point{
+        display:flex;
+        column-gap:30px;
+    }
+
+    .point.right{
+        flex-direction: row-reverse;
+    }
 }
