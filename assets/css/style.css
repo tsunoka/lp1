@@ -43,18 +43,6 @@ li {
     margin: 5px auto;
 }
 
-/*PC表示*/
-/*@media(min-width:768px) {
-    .button {
-        width: 180px;
-        height: 40px;
-        box-sizing: border-box;
-        font-size: 12px;
-        padding: 0 30px;
-        margin: auto;
-    }
-}*/
-
 .container{
     margin:20px 10px;
 }
