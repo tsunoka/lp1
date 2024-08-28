@@ -58,7 +58,6 @@ li {
 .container{
     margin:20px 10px;
 }
-
 /*PC*/
 @media(min-width:768px){
     .container{
@@ -71,11 +70,39 @@ li {
     font-size: 30px;
     margin:25px 0;
 }
-
 /*PC*/
 @media(min-width:768px){
     .section-title{
         margin-bottom:30px;
+    }
+}
+
+/*説明会申し込みエリア*/
+
+.briefing-request{
+    background-color: #FFEDED;
+    text-align: center;
+    padding:30px;
+}
+
+.briefing-request p{
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.briefing-request-button{
+    background: linear-gradient(to right, #0271E0, #53A2F0);
+    width:100%;
+    font-size: 20px;
+    padding:20px 0;
+}
+@media(min-width:768px){
+    .briefing-request{
+        padding:50px 0;
+    }
+
+    .briefing-request-button{
+        width:350px;
     }
 }
 
