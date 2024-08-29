@@ -299,6 +299,7 @@ li {
     .cover picture img{
         height:250px;
         width:auto;
+        object-fit:cover;
         margin: 0 auto;
         overflow: hidden;
     }
