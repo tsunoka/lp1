@@ -4,6 +4,7 @@
 /* ページ全体のスタイル
 ------------------------------------------ */
 
+
 body {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 400;
@@ -15,6 +16,7 @@ a {
     color: #000;
     text-decoration: none;
 }
+
 
 a,
 a:hover,
@@ -39,58 +41,61 @@ li {
 .button {
     border-radius: 3rem;
     color: #fff;
-    padding: 10px 20px;
-    margin: 5px auto;
+    padding: 0.625rem 1.25rem;
+    margin: 0.3125rem auto;
 }
 
-.container{
-    margin:20px 10px;
+.container {
+    margin: 1.25rem 0.625rem;
 }
+
 /*PC*/
-@media(min-width:768px){
-    .container{
-        margin:80px 20%;
+@media(min-width:768px) {
+    .container {
+        margin: 5rem 20%;
     }
 }
 
-.section-title{
+.section-title {
     text-align: center;
-    font-size: 30px;
-    margin:25px 0;
+    font-size: 1.875rem;
+    margin: 1.5625rem 0;
 }
+
 /*PC*/
-@media(min-width:768px){
-    .section-title{
-        margin-bottom:30px;
+@media(min-width:768px) {
+    .section-title {
+        margin-bottom: 1.875rem;
     }
 }
 
 /*説明会申し込みエリア*/
 
-.briefing-request{
+.briefing-request {
     background-color: #FFEDED;
     text-align: center;
-    padding:30px;
+    padding: 1.875rem;
 }
 
-.briefing-request p{
-    font-size:16px;
-    margin-bottom:10px;
+.briefing-request p {
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
 }
 
-.briefing-request-button{
+.briefing-request-button {
     background: linear-gradient(to right, #0271E0, #53A2F0);
-    width:100%;
-    font-size: 20px;
-    padding:20px 0;
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 1.25rem 0;
 }
-@media(min-width:768px){
-    .briefing-request{
-        padding:50px 0;
+
+@media(min-width:768px) {
+    .briefing-request {
+        padding: 3.125rem 0;
     }
 
-    .briefing-request-button{
-        width:350px;
+    .briefing-request-button {
+        width: 21.875rem;
     }
 }
 
@@ -152,15 +157,15 @@ li {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 20%);
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 20%);
 }
 
 .header-title {
     color: #005BAC;
-    font-size: 23px;
-    padding-left: 15px;
+    font-size: 1.4375rem;
+    padding-left: 0.9375rem;
     margin: auto 0;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.0313rem;
 }
 
 @media(min-width:768px) {
@@ -171,10 +176,10 @@ li {
     }
 
     .header-title {
-        margin: auto -4px;
+        margin: auto -0.25rem;
         padding-left: 0;
-        font-size: 33px;
-        }
+        font-size: 2.0625rem;
+    }
 }
 
 /*ハンバーガーボタン（SP表示のみ）*/
@@ -183,12 +188,12 @@ li {
         background-color: #005BAC;
         display: flex;
         align-items: center;
-        padding: 10px 15px;
-        padding-top: 4px;
+        padding: 0.625rem 0.9375rem;
+        padding-top: 0.25rem;
     }
 
     .hamburger-button {
-        font-size: 39.5px;
+        font-size: 2.4688rem;
         color: #fff;
     }
 
@@ -196,7 +201,7 @@ li {
     .drawer-menu-container {
         z-index: 2;
         position: fixed;
-        top: 70px;
+        top: 4.375rem;
         left: 0;
         right: 0;
         background-color: #005BAC;
@@ -208,33 +213,33 @@ li {
         display: block;
         color: #fff;
         border-bottom: solid 1px #fff;
-        margin: 0 20px;
-        padding: 20.5px 0;
+        margin: 0 1.25rem;
+        padding: 1.2813rem 0;
         line-height: 1rem;
     }
 
     .drawer-menu i {
-        font-size: 25px;
-        margin-left: -6px;
+        font-size: 1.5625rem;
+        margin-left: -0.375rem;
 
     }
 
     .drawer-menu-text {
-        font-size: 18px;
-        letter-spacing: 0.2px;
-        margin-left: 4px;
-        line-height: 5.8px;
+        font-size: 1.125rem;
+        letter-spacing: 0.0125rem;
+        margin-left: 0.25rem;
+        line-height: 0.3625rem;
     }
 
     .drawer-menu-button {
         background-color: #fff;
         color: #005BAC;
         display: block;
-        margin: 33px auto;
-        padding: 20px 0;
+        margin: 2.0625rem auto;
+        padding: 1.25rem 0;
         width: 90%;
         box-sizing: border-box;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     /* スライドイン後の位置の指定 */
@@ -259,28 +264,29 @@ li {
 
     .header-nav-container {
         display: flex;
-        column-gap: 15px;
+        column-gap: 0.9375rem;
     }
 
     .header-nav {
         display: flex;
         align-items: center;
-        font-size: 19px;
-        letter-spacing: 1px;
-        column-gap: 48px;
-        width: 459px;
+        font-size: 1.1875rem;
+        letter-spacing: 0.0625rem;
+        column-gap: 3rem;
+        width: 28.6875rem;
         box-sizing: border-box;
-        margin-top: 4px;    }
+        margin-top: 0.25rem;
+    }
 
     .header-nav-button {
         background: linear-gradient(to right, #0271E0, #53A2F0);
-        width: 279px;
-        height: 65px;
+        width: 17.4375rem;
+        height: 4.0625rem;
         box-sizing: border-box;
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: 0;
-        margin: 17px auto;
-        }
+        margin: 1.0625rem auto;
+    }
 }
 
 /* Cover
@@ -288,18 +294,18 @@ li {
 
 /*全体*/
 .cover {
-    margin-top: 70px;
-    position:relative;
+    margin-top: 4.375rem;
+    position: relative;
 }
 
 /*カバー画像*/
 
 /*SP*/
-@media(max-width:767px){
-    .cover picture img{
-        height:250px;
-        width:auto;
-        object-fit:cover;
+@media(max-width:767px) {
+    .cover picture img {
+        height: 15.625rem;
+        width: auto;
+        object-fit: cover;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -309,18 +315,18 @@ li {
     position: absolute;
     top: 4%;
     left: 0;
-    margin-left: 16px;
+    margin-left: 1rem;
 }
 
 /*PC*/
-@media(min-width:768px){
-    .cover{
-        margin-top: 104px;
+@media(min-width:768px) {
+    .cover {
+        margin-top: 6.5rem;
     }
 
-    .cover-left-container{
+    .cover-left-container {
         top: 13.5%;
-        left:20.5%;
+        left: 20.5%;
     }
 }
 
@@ -328,51 +334,51 @@ li {
 /*画像左部の文字*/
 .cover-left-top {
     display: flex;
-    margin-top: 14px;
+    margin-top: 0.875rem;
 }
 
 /*合格実績No.1(cover-left-top)*/
 .cover-frame {
-    height: 72px;
+    height: 4.5rem;
 }
 
 .cover-frame-inside-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 33px;
-    margin-top: -5px;
-    font-size: 11px;
+    line-height: 2.0625rem;
+    margin-top: -0.3125rem;
+    font-size: 0.6875rem;
 }
 
 .cover-frame-inside-no-1 {
     color: #F11F8D;
-    font-size: 26px;
+    font-size: 1.625rem;
 }
 
 .cover-frame-inside-no-1 .letter-big {
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 /*PC*/
-@media(min-width:768px){
-    .cover-frame{
-        height: 150px;
+@media(min-width:768px) {
+    .cover-frame {
+        height: 9.375rem;
     }
 
-    .cover-frame-inside-text{
-        font-size: 20px;
-        margin: 2px 20px;
-        row-gap: 34px;
-        }
+    .cover-frame-inside-text {
+        font-size: 1.25rem;
+        margin: 0.125rem 1.25rem;
+        row-gap: 2.125rem;
+    }
 
-    .cover-frame-inside-no-1{
-        font-size: 55px;
-        margin-left: 13px;
-        }
+    .cover-frame-inside-no-1 {
+        font-size: 3.4375rem;
+        margin-left: 0.8125rem;
+    }
 
-    .cover-frame-inside-no-1 .letter-big{
-        font-size: 83px;
+    .cover-frame-inside-no-1 .letter-big {
+        font-size: 5.1875rem;
     }
 }
 
@@ -380,32 +386,32 @@ li {
 .cover-left-bottom {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
 }
 
-.cover-left-bottom-subtext{
-    letter-spacing: -2px;
+.cover-left-bottom-subtext {
+    letter-spacing: -0.125rem;
 }
 
 .cover-left-bottom-text {
     color: #005BAC;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
 
-    .cover-left-bottom{
-        margin-top:26px;
+    .cover-left-bottom {
+        margin-top: 1.625rem;
     }
 
-    .cover-left-bottom-subtext{
-        font-size: 35px;
-        margin-bottom:8px;
+    .cover-left-bottom-subtext {
+        font-size: 2.1875rem;
+        margin-bottom: 0.5rem;
     }
 
-    .cover-left-bottom-text{
-        font-size: 60.5px;
-        line-height:82px;
+    .cover-left-bottom-text {
+        font-size: 3.7813rem;
+        line-height: 5.125rem;
     }
 }
 
@@ -413,29 +419,29 @@ li {
 .buttons-container {
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
-    row-gap: 7px;
+    margin: 1.25rem 0;
+    row-gap: 0.4375rem;
 }
 
 .buttons-container button {
-    width: 250px;
+    width: 15.625rem;
     white-space: nowrap;
     box-sizing: border-box;
 }
 
-@media(min-width:768px){
-    .buttons-container{
-        z-index:3;
+@media(min-width:768px) {
+    .buttons-container {
+        z-index: 3;
         flex-direction: row;
         align-items: center;
-        margin: -70px 20%;
-        padding:20px 0;
-        }
+        margin: -4.375rem 20%;
+        padding: 1.25rem 0;
+    }
 
-    .buttons-container button{
-        font-size: 24px;
-        width: 340px;
-        padding: 20px 0;
+    .buttons-container button {
+        font-size: 1.5rem;
+        width: 21.25rem;
+        padding: 1.25rem 0;
     }
 
 
@@ -456,49 +462,49 @@ li {
 /* reason
 ------------------------------------------ */
 
-#reason .section-title span{
-    color:#F11F8D;
-    font-size: 45px;
-
-}
-
-.point{
-    margin-bottom:30px;
-}
-
-.point img{
-    border-radius: 1.5rem;
-}
-
-.point-text h3{
+#reason .section-title span {
     color: #F11F8D;
-    font-size:25px;
+    font-size: 2.8125rem;
+
 }
 
-.point-text h3 span{
-    font-size:38px;
-    margin-left:7px;
+.point {
+    margin-bottom: 30px;
 }
 
-.point-title{
+.point img {
+    border-radius: 24px;
+}
+
+.point-text h3 {
+    color: #F11F8D;
+    font-size: 1.5625rem;
+}
+
+.point-text h3 span {
+    font-size: 2.375rem;
+    margin-left: 0.4375rem;
+}
+
+.point-title {
     display: block;
-    font-size:20px;
-    margin-bottom:10px;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
 }
 
-.point-discription{
-    letter-spacing: 1px;
-    font-size:16px;
+.point-discription {
+    letter-spacing: 0.0625rem;
+    font-size: 1rem;
 }
 
 /*PC*/
-@media(min-width:768px){
-    .point{
-        display:flex;
-        column-gap:30px;
+@media(min-width:768px) {
+    .point {
+        display: flex;
+        column-gap: 1.875rem;
     }
 
-    .point.right{
+    .point.right {
         flex-direction: row-reverse;
     }
 }
