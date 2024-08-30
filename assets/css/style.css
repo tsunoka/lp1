@@ -3,7 +3,17 @@
 
 /* ページ全体のスタイル
 ------------------------------------------ */
+/*
+html{
+    font-size:1vw;
+}
 
+@media(max-width:767px){
+    html{
+        font-size: 5vw;
+    }
+
+}*/
 
 body {
     font-family: "Noto Sans JP", sans-serif;
@@ -295,38 +305,33 @@ li {
 /*全体*/
 .cover {
     margin-top: 4.375rem;
-    position: relative;
+    height: fit-content;
+    background-image: url(../images/mainVIsual_sp.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
 }
 
-/*カバー画像*/
-
-/*SP*/
-@media(max-width:767px) {
-    .cover picture img {
-        height: 15.625rem;
-        width: auto;
-        object-fit: cover;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-}
-
+/*カバー左側の部分*/
 .cover-left-container {
-    position: absolute;
-    top: 4%;
-    left: 0;
-    margin-left: 1rem;
+    width:fit-content;
+    margin-left:auto;
+    margin-right:60%;
+    padding: 1.25rem 0.625rem;
+    white-space: nowrap;
 }
 
 /*PC*/
 @media(min-width:768px) {
     .cover {
+        background-image: url(../images/mainVIsual_pc.png);
+        height: fit-content;
         margin-top: 6.5rem;
     }
 
     .cover-left-container {
-        top: 13.5%;
-        left: 20.5%;
+        margin-left:auto;
+        margin-right:40%;
     }
 }
 
