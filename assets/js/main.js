@@ -15,4 +15,12 @@ $(window).on('resize', function () {
     hamburger.removeClass('drawer-menu-active');
 });
 
+//SmartTab
+//タブ
+$('#smarttab').smartTab({
+    enableUrlHash: false
+});
+
+
+
 //スムーススクロール　参考：https://125naroom.com/web/2899

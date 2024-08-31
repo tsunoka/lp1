@@ -517,3 +517,69 @@ li {
         flex-direction: row-reverse;
     }
 }
+
+/* course
+------------------------------------------ */
+
+/* タブ */
+.st-theme-basic {
+    border: none;
+}
+
+/* タブナビゲーション */
+.tab.st>.nav {
+    column-gap: 8px;
+    flex-direction: row !important;
+}
+
+.tab.st-theme-basic>.nav {
+    box-shadow: none;
+}
+
+.tab.st-theme-basic>.nav .nav-link {
+    padding-top: 22px;
+    padding-bottom: 23px;
+    font-size: 19px;
+    line-height: 1;
+    background-color: #f0f0f0;
+    color: #000;
+    border-radius: 0.637rem 0.637rem 0 0;
+}
+
+@media (min-width: 768px) {
+    .tab.st-theme-basic>.nav .nav-link {
+        padding-top: 1.45rem;
+        padding-bottom: 1.5rem;
+        font-size: 1.25rem;
+    }
+}
+
+/* アクティブ状態 */
+.tab.st-theme-basic>.nav .nav-link.active {
+    color: #fff !important;
+    background-color: #f2a118;
+}
+
+.tab.st-theme-basic>.nav .nav-link.active::after {
+    background-color: unset !important;
+}
+
+/* タブコンテンツ */
+.tab-content {
+    text-align: center;
+    background-color: #fff;
+}
+
+.tab.st-theme-basic>.tab-content>.tab-pane {
+    flex-direction: column;
+    row-gap: 29px;
+    padding: 25px 25px 20px;
+}
+
+@media (min-width: 768px) {
+    .tab.st-theme-basic>.tab-content>.tab-pane {
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 3.75rem 2.25rem;
+    }
+}

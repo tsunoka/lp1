@@ -25,6 +25,8 @@
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
         <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- Smart Tab -->
+        <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet">
 
         <!--css-->
         <link rel="stylesheet" href="./assets/css/style.css">
@@ -86,12 +88,12 @@
                     </div>
                 </div>
             </div>
-                <!--ボタン群-->
-                <div class="buttons-container">
-                    <button type="button" href="#" class="button addmission-inquiry">入学のお問い合わせ</button>
-                    <button type="button" href="#" class="button free-trial">無料体験に申し込む</button>
-                    <button type="button" href="#" class="button request-information">資料請求する</button>
-                </div>
+            <!--ボタン群-->
+            <div class="buttons-container">
+                <button type="button" href="#" class="button addmission-inquiry">入学のお問い合わせ</button>
+                <button type="button" href="#" class="button free-trial">無料体験に申し込む</button>
+                <button type="button" href="#" class="button request-information">資料請求する</button>
+            </div>
 
 
             <!--選ばれる3つの理由-->
@@ -107,7 +109,7 @@
                             <p class="point-discription">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                     </div>
-                <!--point2-->
+                    <!--point2-->
                     <div class="point right">
                         <img src="./assets/images/pht_reason02.png" alt="">
                         <div class="point-text">
@@ -116,7 +118,7 @@
                             <p class="point-discription">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                     </div>
-                <!--point3-->
+                    <!--point3-->
                     <div class="point">
                         <img src="./assets/images/pht_reason03.png" alt="">
                         <div class="point-text">
@@ -126,6 +128,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--説明会の申し込み-->
                 <div class="briefing-request">
                     <p>入学ご検討の方は、まずは入学説明会にお越しください</p>
                     <button type="button" href="#" class="button briefing-request-button  noto-sans-jp-bold">入学説明会に申し込む</button>
@@ -134,7 +138,75 @@
 
             <!--コース・目的-->
             <section id="course">
+                <div class="container">
+                    <h2 class="section-title">コース・目的</h2>
+                    <!-- タブ -->
+                    <div id="smarttab" class="tab">
+                        <!-- タブナビゲーション -->
+                        <ul class="nav">
+                            <li><a class="nav-link" href="#tab-1">学年別から選ぶ</a></li>
+                            <li><a class="nav-link" href="#tab-2">目的別から選ぶ</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <!-- タブ1 -->
+                            <div id="tab-1" class="tab-pane flex" role="tabpanel">
+                                <!-- 1個目 -->
+                                <div class="course-tab-content-item">
+                                    <img src="./assets/images/pht_cource01.png" alt="">
+                                    <div class="course-tab-content-title">
+                                        <a href="#"><i class="bi bi-arrow-right-short"></i>高卒生</a>
+                                    </div>
+                                </div>
+                                <!-- 2個目 -->
+                                <div class="course-tab-content-item">
+                                    <img src="./assets/images/pht_cource02.png" alt="">
+                                    <a href="#"><i class="bi bi-arrow-right-short"></i>高校3年生</a>
+                                </div>
+                                <!-- 3個目 -->
+                                <div class="course-tab-content-item">
+                                    <img src="./assets/images/pht_cource03.png" alt="">
+                                    <a href="#"><i class="bi bi-arrow-right-short"></i>高校2年生</a>
+                                </div>
+                                <!-- 4個目 -->
+                                <div class="course-tab-content-item">
+                                    <img src="./assets/images/pht_cource04.png" alt="">
+                                    <a href="#"><i class="bi bi-arrow-right-short"></i>高校1年生</a>
+                                </div>
+                            </div>
+                            <!-- タブ2 -->
+                            <div id="tab-2" class="tab-pane flex" role="tabpanel">
+                                <!-- 1個目 -->
+                                <div class="course-tab-content-item">
+                                    <img src="./assets/images/pht_cource05.png" alt="">
+                                    <div class="course-tab-content-title">
+                                        <a href="#"><i class="bi bi-arrow-right-short"></i>難関大学・医学部合格を目指す</a>
+                                    </div>
+                                </div>
+                                <!-- 2個目 -->
+                                <div class="course-tab-content-item">
+                                    <img src="./assets/images/pht_cource06.png" alt="">
+                                    <a href="#"><i class="bi bi-arrow-right-short"></i>名門私立大学合格を目指す</a>
+                                </div>
+                                <!-- 3個目 -->
+                                <div class="course-tab-content-item">
+                                    <img src="./assets/images/pht_cource07.png" alt="">
+                                    <a href="#"><i class="bi bi-arrow-right-short"></i>国公立大学合格を目指す</a>
+                                </div>
+                                <!-- 4個目 -->
+                                <div class="course-tab-content-item">
+                                    <img src="./assets/images/pht_cource08.png" alt="">
+                                    <a href="#"><i class="bi bi-arrow-right-short"></i>海外の大学合格を目指す</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!--説明会の申し込み-->
+                <div class="briefing-request">
+                    <p>入学ご検討の方は、まずは入学説明会にお越しください</p>
+                    <button type="button" href="#" class="button briefing-request-button  noto-sans-jp-bold">入学説明会に申し込む</button>
+                </div>
             </section>
 
             <!--費用-->
@@ -144,6 +216,8 @@
         <footer></footer>
         <!--JQuery-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--smart tab-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
         <!--js-->
         <script src="./assets/js/main.js"></script>
     </body>
