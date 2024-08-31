@@ -601,5 +601,20 @@ li {
 }
 
 .course-tab-content-item{
+    text-align: left;
     padding-bottom: 30px;
+}
+
+.course-tab-content-text i,
+.course-tab-content-text span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.course-tab-content-text span{
+    margin-top:3px;
+}
+
+.course-tab-content-text i{
+    color: #005BAC;
 }
