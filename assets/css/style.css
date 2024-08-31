@@ -591,10 +591,6 @@ li {
     padding: 25px;
 }
 
-.course-tab-content-item{
-    padding-bottom: 30px;
-}
-
 /*PC*/
 @media (min-width: 768px) {
     .tab.st-theme-basic>.tab-content>.tab-pane {
@@ -602,4 +598,8 @@ li {
         flex-direction: row;
         padding: 3.75rem 2.25rem;
     }
+}
+
+.course-tab-content-item{
+    padding-bottom: 30px;
 }
