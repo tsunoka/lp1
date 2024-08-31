@@ -13,12 +13,10 @@ html{
         font-size: 5vw;
     }
 
-}*/
-/*
+}*//*
 *{
     outline :solid 2px #000;
-}
-*/
+}*/
 
 body {
     font-family: "Noto Sans JP", sans-serif;
@@ -67,7 +65,7 @@ li {
 /*PC*/
 @media(min-width:768px) {
     .container {
-        margin: 5rem 20%;
+        margin: 5rem clamp(5rem, -7.667rem + 26.39vw, 24rem);
     }
 }
 
@@ -534,11 +532,17 @@ li {
 @media(min-width:768px) {
     .point {
         display: flex;
+        align-items:flex-start;
+        width: 100%;
         column-gap: 1.875rem;
     }
 
     .point.right {
         flex-direction: row-reverse;
+    }
+
+    .point img{
+        width:clamp(100px,50%,500px);
     }
 }
 
