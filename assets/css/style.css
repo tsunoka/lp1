@@ -305,27 +305,29 @@ li {
 /*全体*/
 .cover {
     margin-top: 4.375rem;
-    height: fit-content;
+    height: 20vh;
     background-image: url(../images/mainVIsual_sp.png);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
+    display: flex;
 }
 
 /*カバー左側の部分*/
 .cover-left-container {
-    width:fit-content;
-    margin-left:auto;
-    margin-right:60%;
-    padding: 1.25rem 0.625rem;
+    margin-left: auto;
+    margin-top: 0.3125rem;
+    margin-right: 60%;
+    padding-left: 4%;
     white-space: nowrap;
-}
+    box-sizing: border-box;
+    transform: scale(0.8);}
 
 /*PC*/
 @media(min-width:768px) {
     .cover {
         background-image: url(../images/mainVIsual_pc.png);
-        height: fit-content;
+        height: min-content;
         margin-top: 6.5rem;
     }
 
@@ -339,12 +341,12 @@ li {
 /*画像左部の文字*/
 .cover-left-top {
     display: flex;
-    margin-top: 0.875rem;
+    margin-top: min(14/320*100vw,14px);
 }
 
 /*合格実績No.1(cover-left-top)*/
 .cover-frame {
-    height: 4.5rem;
+    height: min(72/320*100vw,72px);
 }
 
 .cover-frame-inside-text {
@@ -401,6 +403,8 @@ li {
 .cover-left-bottom-text {
     color: #005BAC;
     font-size: 1.5625rem;
+    text-shadow: #fff 0 0 4px;
+
 }
 
 @media(min-width:768px) {
