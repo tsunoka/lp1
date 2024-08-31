@@ -18,7 +18,7 @@ html{
 *{
     outline :solid 2px #000;
 }
-    */
+*/
 
 body {
     font-family: "Noto Sans JP", sans-serif;
@@ -61,7 +61,7 @@ li {
 }
 
 .container {
-    margin: 3.25rem 0.625rem;
+    margin: 3.25rem 1.625rem;
 }
 
 /*PC*/
@@ -417,6 +417,7 @@ li {
 
 }
 
+/*PC*/
 @media(min-width:768px) {
 
     .cover-left-bottom {
@@ -489,7 +490,6 @@ li {
     }
 }
 
-
 #reason .section-title span {
     color: #F11F8D;
     font-size: 2.8125rem;
@@ -501,7 +501,12 @@ li {
 }
 
 .point img {
+    width: 100%;
     border-radius: 24px;
+}
+
+.point-text *{
+    display: inline-block;
 }
 
 .point-text h3 {
