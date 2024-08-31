@@ -56,7 +56,7 @@ li {
 }
 
 .container {
-    margin: 1.25rem 0.625rem;
+    margin: 3.25rem 0.625rem;
 }
 
 /*PC*/
@@ -68,8 +68,8 @@ li {
 
 .section-title {
     text-align: center;
-    font-size: 1.875rem;
-    margin: 1.5625rem 0;
+    font-size: 1.6rem;
+    margin: 1.25rem 0;
 }
 
 /*PC*/
@@ -470,6 +470,12 @@ li {
 
 /* reason
 ------------------------------------------ */
+#reason .container {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+
+}
+
 
 #reason .section-title span {
     color: #F11F8D;
@@ -521,6 +527,11 @@ li {
 /* course
 ------------------------------------------ */
 
+#course .container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* タブ */
 .st-theme-basic {
     border: none;
@@ -528,8 +539,9 @@ li {
 
 /* タブナビゲーション */
 .tab.st>.nav {
-    column-gap: 8px;
+    column-gap: 15px;
     flex-direction: row !important;
+    margin: 0 10px;
 }
 
 .tab.st-theme-basic>.nav {
@@ -537,15 +549,14 @@ li {
 }
 
 .tab.st-theme-basic>.nav .nav-link {
-    padding-top: 22px;
-    padding-bottom: 23px;
-    font-size: 19px;
+    padding: 22px 10px;
+    font-size: 16px;
     line-height: 1;
     background-color: #f0f0f0;
-    color: #000;
-    border-radius: 0.637rem 0.637rem 0 0;
-}
+    color: #929292;
+    border-radius: 0.637rem 0.637rem 0 0;}
 
+/*PC*/
 @media (min-width: 768px) {
     .tab.st-theme-basic>.nav .nav-link {
         padding-top: 1.45rem;
@@ -556,8 +567,8 @@ li {
 
 /* アクティブ状態 */
 .tab.st-theme-basic>.nav .nav-link.active {
-    color: #fff !important;
-    background-color: #f2a118;
+    color: #000 !important;
+    background-color: #F2F9FF;
 }
 
 .tab.st-theme-basic>.nav .nav-link.active::after {
@@ -567,15 +578,20 @@ li {
 /* タブコンテンツ */
 .tab-content {
     text-align: center;
-    background-color: #fff;
+    background-color: #F2F9FF;
 }
 
 .tab.st-theme-basic>.tab-content>.tab-pane {
     flex-direction: column;
     row-gap: 29px;
-    padding: 25px 25px 20px;
+    padding: 25px;
 }
 
+.course-tab-content-item{
+    padding-bottom: 30px;
+}
+
+/*PC*/
 @media (min-width: 768px) {
     .tab.st-theme-basic>.tab-content>.tab-pane {
         justify-content: space-between;
