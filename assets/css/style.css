@@ -35,7 +35,7 @@ a {
 a,
 a:hover,
 a i {
-    transition: all 0.3s;
+    transition: all .3s;
 }
 
 img {
@@ -55,8 +55,8 @@ li {
 .button {
     position: relative;
     border-radius: 3rem;
-    padding: 0.625rem 1.25rem;
-    margin: 0.3125rem auto;
+    padding: .625rem 1.25rem;
+    margin: .3125rem auto;
     color: #fff;
     overflow: hidden;
 }
@@ -106,7 +106,7 @@ a:hover .button::after{
 
 .briefing-request p {
     font-size: 1rem;
-    margin-bottom: 0.625rem;
+    margin-bottom: .625rem;
 }
 
 .briefing-request-button {
@@ -189,7 +189,7 @@ a:hover .button::after{
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 20%);
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 20%);
 }
 
 .header-title {
@@ -198,7 +198,7 @@ a:hover .button::after{
     padding-left: clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
     /*containerのmargin(横)と同値*/
     margin: auto 0;
-    letter-spacing: -0.0313rem;
+    letter-spacing: -.0313rem;
 }
 
 @media(min-width:768px) {
@@ -210,9 +210,9 @@ a:hover .button::after{
     }
 
     .header-title {
-        margin: auto -0.25rem;
+        margin: auto -.25rem;
         padding-left: 0;
-        font-size: clamp(1.75rem, 1.542rem + 0.43vw, 2.063rem);
+        font-size: clamp(1.75rem, 1.542rem + .43vw, 2.063rem);
     }
 }
 
@@ -221,8 +221,8 @@ a:hover .button::after{
     background-color: #005BAC;
     display: flex;
     align-items: center;
-    padding: 0.625rem 0.9375rem;
-    padding-top: 0.25rem;
+    padding: .625rem .9375rem;
+    padding-top: .25rem;
 }
 
 .hamburger-button {
@@ -253,15 +253,15 @@ a:hover .button::after{
 }
 
 .drawer-menu i {
-    margin-left: -0.375rem;
+    margin-left: -.375rem;
 
 }
 
 .drawer-menu-text {
     font-size: 1.125rem;
-    letter-spacing: 0.0125rem;
-    margin-left: 0.25rem;
-    line-height: 0.3625rem;
+    letter-spacing: .0125rem;
+    margin-left: .25rem;
+    line-height: .3625rem;
 }
 
 .drawer-menu-button {
@@ -311,22 +311,22 @@ a:hover .button::after{
         visibility: visible;
         display: flex;
         height: 6.5rem;
-        column-gap: clamp(0rem, -0.625rem + 1.3vw, 0.938rem);
+        column-gap: clamp(0rem, -.625rem + 1.3vw, .938rem);
     }
 
     .header-nav {
         display: flex;
         align-items: center;
-        column-gap: clamp(19.008px, -0.021rem + 2.52vw, 3rem);
+        column-gap: clamp(19.008px, -.021rem + 2.52vw, 3rem);
         box-sizing: border-box;
-        margin-top: 0.25rem;
+        margin-top: .25rem;
         padding-left: 10px;
         padding-right: 30px;
     }
 
     .header-menu-text {
-        font-size: clamp(13.008px, 0.563rem + 0.52vw, 19.008px);
-        letter-spacing: 0.0625rem;
+        font-size: clamp(13.008px, .563rem + .52vw, 19.008px);
+        letter-spacing: .0625rem;
         margin-left: 0;
         line-height: 1;
 
@@ -339,7 +339,7 @@ a:hover .button::after{
         width: clamp(10rem, 5.042rem + 10.33vw, 17.438rem);
         height: clamp(2.5rem, 1.458rem + 2.17vw, 4.063rem);
         box-sizing: border-box;
-        font-size: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem);
+        font-size: clamp(.75rem, .417rem + .69vw, 1.25rem);
         padding: 0;
         margin: auto 0;
     }
@@ -360,7 +360,7 @@ a:hover .button::after{
 
 /*カバー左側の部分*/
 .cover-left-container {
-    margin-top: 0.3125rem;
+    margin-top: .3125rem;
     padding-left: clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
     white-space: nowrap;
     box-sizing: border-box;
@@ -376,7 +376,7 @@ a:hover .button::after{
     }
 
     .cover-left-container {
-        padding-top: clamp(2.188rem, -0.521rem + 5.64vw, 6.25rem);
+        padding-top: clamp(2.188rem, -.521rem + 5.64vw, 6.25rem);
         padding-left: 0;
         margin-left: clamp(5rem, -7.667rem + 26.39vw, 24rem);
         /*conteinerのmargin(横)と同値*/
@@ -400,8 +400,8 @@ a:hover .button::after{
     flex-direction: column;
     align-items: center;
     line-height: 2.0625rem;
-    margin-top: -0.3125rem;
-    font-size: 0.6875rem;
+    margin-top: -.3125rem;
+    font-size: .6875rem;
 }
 
 .cover-frame-inside-no-1 {
@@ -420,14 +420,14 @@ a:hover .button::after{
     }
 
     .cover-frame-inside-text {
-        font-size: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem);
-        margin: 0 clamp(0.625rem, 0.208rem + 0.87vw, 1.25rem);
-        row-gap: clamp(0.188rem, -1.104rem + 2.69vw, 2.125rem);
+        font-size: clamp(.75rem, .417rem + .69vw, 1.25rem);
+        margin: 0 clamp(.625rem, .208rem + .87vw, 1.25rem);
+        row-gap: clamp(.188rem, -1.104rem + 2.69vw, 2.125rem);
     }
 
     .cover-frame-inside-no-1 {
-        font-size: clamp(1.875rem, 0.833rem + 2.17vw, 3.438rem);
-        margin-left: clamp(0rem, -0.542rem + 1.13vw, 0.813rem);
+        font-size: clamp(1.875rem, .833rem + 2.17vw, 3.438rem);
+        margin-left: clamp(0rem, -.542rem + 1.13vw, .813rem);
     }
 
     .cover-frame-inside-no-1 .letter-big {
@@ -439,11 +439,11 @@ a:hover .button::after{
 .cover-left-bottom {
     display: flex;
     flex-direction: column;
-    margin-top: 0.9375rem;
+    margin-top: .9375rem;
 }
 
 .cover-left-bottom-subtext {
-    letter-spacing: -0.125rem;
+    letter-spacing: -.125rem;
 }
 
 .cover-left-bottom-text {
@@ -457,17 +457,17 @@ a:hover .button::after{
 @media(min-width:768px) {
 
     .cover-left-bottom {
-        margin-top: clamp(0.625rem, -0.042rem + 1.39vw, 1.625rem);
+        margin-top: clamp(.625rem, -.042rem + 1.39vw, 1.625rem);
     }
 
     .cover-left-bottom-subtext {
-        font-size: clamp(1.063rem, 0.313rem + 1.56vw, 2.188rem);
-        margin-bottom: clamp(0rem, -0.333rem + 0.69vw, 0.5rem);
+        font-size: clamp(1.063rem, .313rem + 1.56vw, 2.188rem);
+        margin-bottom: clamp(0rem, -.333rem + .69vw, .5rem);
     }
 
     .cover-left-bottom-text {
-        font-size: clamp(1.75rem, 0.396rem + 2.82vw, 3.781rem);
-        line-height: clamp(2.5rem, 0.75rem + 3.65vw, 5.125rem);
+        font-size: clamp(1.75rem, .396rem + 2.82vw, 3.781rem);
+        line-height: clamp(2.5rem, .75rem + 3.65vw, 5.125rem);
     }
 }
 
@@ -476,7 +476,7 @@ a:hover .button::after{
     display: flex;
     flex-direction: column;
     margin: 1.25rem 0;
-    row-gap: 0.4375rem;
+    row-gap: .4375rem;
 }
 
 .buttons-container .button {
@@ -496,9 +496,9 @@ a:hover .button::after{
 
     .buttons-container .button {
         text-align: center;
-        font-size: clamp(0.813rem, 0.313rem + 1.04vw, 1.563rem);
+        font-size: clamp(.813rem, .313rem + 1.04vw, 1.563rem);
         width: clamp(12.25rem, 6.25rem + 12.5vw, 21.25rem);
-        padding: clamp(0.563rem, 0.104rem + 0.95vw, 1.25rem) clamp(1.25rem, 0.833rem + 0.87vw, 1.875rem);
+        padding: clamp(.563rem, .104rem + .95vw, 1.25rem) clamp(1.25rem, .833rem + .87vw, 1.875rem);
     }
 
 
@@ -553,17 +553,17 @@ a:hover .button::after{
 
 .point-text h3 span {
     font-size: 2.375rem;
-    margin-left: 0.4375rem;
+    margin-left: .4375rem;
 }
 
 .point-title {
     display: block;
     font-size: 1.25rem;
-    margin-bottom: 0.625rem;
+    margin-bottom: .625rem;
 }
 
 .point-discription {
-    letter-spacing: 0.0625rem;
+    letter-spacing: .0625rem;
     font-size: 1rem;
 }
 
@@ -602,9 +602,9 @@ a:hover .button::after{
 
 /* タブナビゲーション */
 .tab.st>.nav {
-    column-gap: 0.9375rem;
+    column-gap: .9375rem;
     flex-direction: row !important;
-    margin: 0 0.625rem;
+    margin: 0 .625rem;
 }
 
 /*PC*/
@@ -620,12 +620,12 @@ a:hover .button::after{
 }
 
 .tab.st-theme-basic>.nav .nav-link {
-    padding: 1.375rem 0.625rem;
+    padding: 1.375rem .625rem;
     font-size: 1rem;
     line-height: 1;
     background-color: #f0f0f0;
     color: #929292;
-    border-radius: 0.637rem 0.637rem 0 0;
+    border-radius: .637rem .637rem 0 0;
 }
 
 /*PC*/
@@ -693,7 +693,7 @@ a:hover .button::after{
 }
 
 .course-tab-content-text span {
-    margin-top: 0.1875rem;
+    margin-top: .1875rem;
 }
 
 .course-tab-content-text i {
@@ -734,12 +734,12 @@ a:hover .button::after{
     font-weight: 400;
     /*通常の太さ*/
     background-color: #f5f5f5;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 #price td {
     border: solid 1px #999;
-    padding: 10px 0;
+    padding: .625rem 0;
 }
 
 #price td>span {
