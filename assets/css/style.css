@@ -187,16 +187,16 @@ li {
 }
 
 @media(min-width:768px) {
-
-    .header-container {
-        padding: 0 20%;
+    .header-container{
+        padding:0 clamp(5rem, -7.667rem + 26.39vw, 24rem);/*conteinerのmargin(横)と同値*/
+        box-sizing: border-box;
         white-space: nowrap;
     }
 
     .header-title {
         margin: auto -0.25rem;
         padding-left: 0;
-        font-size: 2.0625rem;
+        font-size: clamp(1.75rem, 1.542rem + 0.43vw, 2.063rem); /*28px*/
     }
 }
 
@@ -281,28 +281,30 @@ li {
 
     .header-nav-container {
         display: flex;
-        column-gap: 0.9375rem;
+        height: 6.5rem;
+        column-gap: clamp(0rem, -0.625rem + 1.3vw, 0.938rem);/*0*/
     }
 
     .header-nav {
         display: flex;
         align-items: center;
-        font-size: 1.1875rem;
+        font-size: clamp(0.813rem, 0.563rem + 0.52vw, 1.188rem);/*13px*/
         letter-spacing: 0.0625rem;
-        column-gap: 3rem;
-        width: 28.6875rem;
+        column-gap: clamp(19.008px, -0.021rem + 2.52vw, 3rem);/*19px*/
+        width: clamp(17.688rem, 10.354rem + 15.28vw, 28.688rem);/*17.6875rem*/
         box-sizing: border-box;
         margin-top: 0.25rem;
+        padding-left:10px;
     }
 
     .header-nav-button {
         background: linear-gradient(to right, #0271E0, #53A2F0);
-        width: 17.4375rem;
-        height: 4.0625rem;
+        width: clamp(10rem, 5.042rem + 10.33vw, 17.438rem);/*10rem*/
+        height: clamp(2.5rem, 1.458rem + 2.17vw, 4.063rem);/*25rem*/
         box-sizing: border-box;
-        font-size: 1.25rem;
+        font-size: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem);/*12px*/
         padding: 0;
-        margin: 1.0625rem auto;
+        margin: auto 0;
     }
 }
 
@@ -451,14 +453,14 @@ li {
         z-index: 3;
         flex-direction: row;
         align-items: center;
-        margin: -4.375rem 20%;
+        margin: -4.375rem clamp(5rem, -7.667rem + 26.39vw, 24rem);/*conteinerのmargin(横)と同値*/
         padding: 1.25rem 0;
     }
 
     .buttons-container button {
         font-size: 1.5rem;
         width: 21.25rem;
-        padding: 1.25rem 0;
+        padding: 1.25rem 30px;
     }
 
 
