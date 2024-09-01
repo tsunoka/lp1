@@ -317,7 +317,6 @@ li {
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
-    display: flex;
 }
 
 /*カバー左側の部分*/
@@ -328,20 +327,21 @@ li {
     padding-left: 4%;
     white-space: nowrap;
     box-sizing: border-box;
-    transform: scale(0.8);
+    padding-top: 1.8125rem;/*min 1.8125rem*/
 }
 
 /*PC*/
 @media(min-width:768px) {
     .cover {
-        background-image: url(../images/mainVIsual_pc.png);
-        height: 30vw;
         margin-top: 6.5rem;
+        background-image: url(../images/mainVIsual_pc.png);
+        height: 34vw;
     }
 
     .cover-left-container {
-        margin-left: auto;
-        margin-right: 40%;
+        padding-top: clamp(2.188rem, -0.521rem + 5.64vw, 6.25rem);
+        padding-left: 0;
+        margin-left: clamp(5rem, -7.667rem + 26.39vw, 24rem);/*conteinerのmargin(横)と同値*/
     }
 }
 
@@ -349,12 +349,11 @@ li {
 /*画像左部の文字*/
 .cover-left-top {
     display: flex;
-    margin-top: min(14/320*100vw, 14px);
 }
 
 /*合格実績No.1(cover-left-top)*/
 .cover-frame {
-    height: min(72/320*100vw, 72px);
+    height: 72px;/*min 72px*/
 }
 
 .cover-frame-inside-text {
@@ -378,22 +377,22 @@ li {
 /*PC*/
 @media(min-width:768px) {
     .cover-frame {
-        height: 9.375rem;
+        height: clamp(5.375rem, 2.708rem + 5.56vw, 9.375rem);
     }
 
     .cover-frame-inside-text {
-        font-size: 1.25rem;
-        margin: 0.125rem 1.25rem;
-        row-gap: 2.125rem;
+        font-size: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem);
+        margin: 0 clamp(0.625rem, 0.208rem + 0.87vw, 1.25rem);
+        row-gap: clamp(0.188rem, -1.104rem + 2.69vw, 2.125rem);
     }
 
     .cover-frame-inside-no-1 {
-        font-size: 3.4375rem;
-        margin-left: 0.8125rem;
+        font-size: clamp(1.875rem, 0.833rem + 2.17vw, 3.438rem);
+        margin-left: clamp(0rem, -0.542rem + 1.13vw, 0.813rem);
     }
 
     .cover-frame-inside-no-1 .letter-big {
-        font-size: 5.1875rem;
+        font-size: clamp(2.688rem, 1.021rem + 3.47vw, 5.188rem);
     }
 }
 
@@ -419,17 +418,17 @@ li {
 @media(min-width:768px) {
 
     .cover-left-bottom {
-        margin-top: 1.625rem;
+        margin-top: clamp(0.625rem, -0.042rem + 1.39vw, 1.625rem); /*0.625rem*/
     }
 
     .cover-left-bottom-subtext {
-        font-size: 2.1875rem;
-        margin-bottom: 0.5rem;
+        font-size: clamp(1.063rem, 0.313rem + 1.56vw, 2.188rem);/*1.0625rem*/
+        margin-bottom: clamp(0rem, -0.333rem + 0.69vw, 0.5rem);/*0*/
     }
 
     .cover-left-bottom-text {
-        font-size: 3.7813rem;
-        line-height: 5.125rem;
+        font-size: clamp(1.75rem, 0.396rem + 2.82vw, 3.781rem); /*1.75rem,3.781rem*/
+        line-height: clamp(2.5rem, 0.75rem + 3.65vw, 5.125rem);
     }
 }
 
