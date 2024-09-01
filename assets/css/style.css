@@ -292,7 +292,7 @@ li {
 
     .header-nav-container {
         position: static;
-        background-color:#fff;
+        background-color:transparent;
         opacity: 1;
         visibility: visible;
         display: flex;
