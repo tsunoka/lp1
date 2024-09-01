@@ -303,13 +303,19 @@ li {
     .header-nav {
         display: flex;
         align-items: center;
-        font-size: clamp(0.813rem, 0.563rem + 0.52vw, 1.188rem);
-        letter-spacing: 0.0625rem;
         column-gap: clamp(19.008px, -0.021rem + 2.52vw, 3rem);
         box-sizing: border-box;
         margin-top: 0.25rem;
         padding-left: 10px;
         padding-right: 30px;
+    }
+
+    .header-menu-text{
+        font-size: clamp(13.008px, 0.563rem + 0.52vw, 19.008px);
+        letter-spacing: 0.0625rem;
+        margin-left: 0;
+        line-height: 1;
+
     }
 
     .header-nav-button {
