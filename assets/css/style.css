@@ -196,7 +196,7 @@ li {
     .header-title {
         margin: auto -0.25rem;
         padding-left: 0;
-        font-size: clamp(1.75rem, 1.542rem + 0.43vw, 2.063rem); /*28px*/
+        font-size: clamp(1.75rem, 1.542rem + 0.43vw, 2.063rem);
     }
 }
 
@@ -282,16 +282,16 @@ li {
     .header-nav-container {
         display: flex;
         height: 6.5rem;
-        column-gap: clamp(0rem, -0.625rem + 1.3vw, 0.938rem);/*0*/
+        column-gap: clamp(0rem, -0.625rem + 1.3vw, 0.938rem);
     }
 
     .header-nav {
         display: flex;
         align-items: center;
-        font-size: clamp(0.813rem, 0.563rem + 0.52vw, 1.188rem);/*13px*/
+        font-size: clamp(0.813rem, 0.563rem + 0.52vw, 1.188rem);
         letter-spacing: 0.0625rem;
-        column-gap: clamp(19.008px, -0.021rem + 2.52vw, 3rem);/*19px*/
-        width: clamp(17.688rem, 10.354rem + 15.28vw, 28.688rem);/*17.6875rem*/
+        column-gap: clamp(19.008px, -0.021rem + 2.52vw, 3rem);
+        width: clamp(17.688rem, 10.354rem + 15.28vw, 28.688rem);
         box-sizing: border-box;
         margin-top: 0.25rem;
         padding-left:10px;
@@ -299,10 +299,10 @@ li {
 
     .header-nav-button {
         background: linear-gradient(to right, #0271E0, #53A2F0);
-        width: clamp(10rem, 5.042rem + 10.33vw, 17.438rem);/*10rem*/
-        height: clamp(2.5rem, 1.458rem + 2.17vw, 4.063rem);/*25rem*/
+        width: clamp(10rem, 5.042rem + 10.33vw, 17.438rem);
+        height: clamp(2.5rem, 1.458rem + 2.17vw, 4.063rem);
         box-sizing: border-box;
-        font-size: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem);/*12px*/
+        font-size: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem);
         padding: 0;
         margin: auto 0;
     }
@@ -329,7 +329,7 @@ li {
     padding-left: 4%;
     white-space: nowrap;
     box-sizing: border-box;
-    padding-top: 1.8125rem;/*min 1.8125rem*/
+    padding-top: 1.8125rem;
 }
 
 /*PC*/
