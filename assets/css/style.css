@@ -453,14 +453,14 @@ li {
         z-index: 3;
         flex-direction: row;
         align-items: center;
-        margin: -4.375rem clamp(5rem, -7.667rem + 26.39vw, 24rem);/*conteinerのmargin(横)と同値*/
+        margin: clamp(-4rem, -2.5rem + -1.04vw, -2.75rem) clamp(5rem, -7.667rem + 26.39vw, 24rem);
         padding: 1.25rem 0;
     }
 
     .buttons-container button {
-        font-size: 1.5rem;
-        width: 21.25rem;
-        padding: 1.25rem 30px;
+        font-size: clamp(0.813rem, 0.313rem + 1.04vw, 1.563rem);
+        width: clamp(12.25rem, 6.25rem + 12.5vw, 21.25rem);
+        padding: clamp(0.563rem, 0.104rem + 0.95vw, 1.25rem) clamp(1.25rem, 0.833rem + 0.87vw, 1.875rem);
     }
 
 
