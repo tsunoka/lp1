@@ -706,13 +706,16 @@ li {
     font-size: 30px;
 }
 
+/*PC*/
 @media(min-width:768px){
     #price table{
         width:fit-content;
     }
+    /*講義数*/
     #price td:nth-child(1){
         padding:1.25rem 2.5rem;
     }
+    /*価格*/
     #price td:nth-child(2){
         padding:1.25rem 9.625rem;
     }
