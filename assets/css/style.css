@@ -725,7 +725,7 @@ li {
 ------------------------------------------ */
 
 /*ボタン２種*/
-.footer-button{
+.footer-button a{
     width:100%;
     height:clamp(10.625rem, 2.852rem + 33.16vw, 18.75rem);
     background-size:cover;
@@ -735,11 +735,11 @@ li {
     padding-left:20px;
 }
 
-.footer-button.faq{
+.footer-button.faq a{
     background-image: url("../images/pht_qa.png");
 }
 
-.footer-button.search-classroom{
+.footer-button.search-classroom a{
     background-image: url("../images/pht_classrooms.png");
 }
 
