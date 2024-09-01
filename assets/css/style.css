@@ -53,14 +53,23 @@ li {
 ------------------------------------------ */
 
 .button {
+    position: relative;
     border-radius: 3rem;
     padding: 0.625rem 1.25rem;
     margin: 0.3125rem auto;
     color: #fff;
+    overflow: hidden;
 }
 
-a:hover{
-    background-color: rgba(255,255,255,.7);
+a:hover .button::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:100%;
+    height: 100%;
+    background:#fff;
+    opacity: .6;
 }
 
 .container {
@@ -761,18 +770,37 @@ a:hover{
 /* footer
 ------------------------------------------ */
 
-/*ボタン２種*/
-.footer-button {
+.footer-buttons-container{
+    display: flex;
+}
+
+.footer-buttons-container a{
     width: 100%;
 }
 
-.footer-button a {
+/*ボタン２種*/
+.footer-button {
+    position: relative;
+}
+
+.footer-button {
     height: clamp(10.625rem, 2.852rem + 33.16vw, 18.75rem);
     background-size: cover;
     background-position: bottom;
     display: flex;
     align-items: center;
     padding-left: 20px;
+}
+
+a:hover .footer-button::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:100%;
+    height: 100%;
+    background:#fff;
+    opacity: .6;
 }
 
 /*PC*/
@@ -782,25 +810,25 @@ a:hover{
         display: flex;
     }
 
-    .footer-button a {
+    .footer-button{
         justify-content: center;
     }
 }
 
-.footer-button.faq a {
+.footer-button.faq {
     background-image: url("../images/footer_faq_sp_19.jpg");
 }
 
-.footer-button.search-classroom a {
+.footer-button.search-classroom{
     background-image:  url("../images/footer_classroom_sp_20.jpg");
 }
 
 @media(min-width:768px) {
-    .footer-button.faq a {
+    .footer-button.faq{
         background-image: url("../images/footer_faq_pc_17.jpg");
     }
 
-    .footer-button.search-classroom a {
+    .footer-button.search-classroom {
         background-image: url("../images/footer_classroom_pc_18.jpg");
     }
 }
