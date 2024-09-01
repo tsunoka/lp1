@@ -418,16 +418,16 @@ li {
 @media(min-width:768px) {
 
     .cover-left-bottom {
-        margin-top: clamp(0.625rem, -0.042rem + 1.39vw, 1.625rem); /*0.625rem*/
+        margin-top: clamp(0.625rem, -0.042rem + 1.39vw, 1.625rem);
     }
 
     .cover-left-bottom-subtext {
-        font-size: clamp(1.063rem, 0.313rem + 1.56vw, 2.188rem);/*1.0625rem*/
-        margin-bottom: clamp(0rem, -0.333rem + 0.69vw, 0.5rem);/*0*/
+        font-size: clamp(1.063rem, 0.313rem + 1.56vw, 2.188rem);
+        margin-bottom: clamp(0rem, -0.333rem + 0.69vw, 0.5rem);
     }
 
     .cover-left-bottom-text {
-        font-size: clamp(1.75rem, 0.396rem + 2.82vw, 3.781rem); /*1.75rem,3.781rem*/
+        font-size: clamp(1.75rem, 0.396rem + 2.82vw, 3.781rem);
         line-height: clamp(2.5rem, 0.75rem + 3.65vw, 5.125rem);
     }
 }
