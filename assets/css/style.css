@@ -697,6 +697,10 @@ li {
     }
 }
 
+.course-tab-content-item img{
+    border-radius: 1rem;
+}
+
 /* price
 ------------------------------------------ */
 
