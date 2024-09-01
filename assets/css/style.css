@@ -783,11 +783,11 @@ li {
 }
 
 .footer-button.faq a {
-    background: linear-gradient(rgba(0, 0, 0, 30%),rgba(0, 0, 0, 30%)), url("../images/footer_faq_sp_19.jpg");
+    background-image: url("../images/footer_faq_sp_19.jpg");
 }
 
 .footer-button.search-classroom a {
-    background: linear-gradient(rgba(0, 0, 0, 30%),rgba(0, 0, 0, 30%)), url("../images/footer_classroom_sp_20.jpg");
+    background-image:  url("../images/footer_classroom_sp_20.jpg");
 }
 
 @media(min-width:768px) {
