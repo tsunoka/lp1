@@ -337,7 +337,7 @@ li {
 /*全体*/
 .cover {
     margin-top: 4.375rem;
-    height: 20vh;
+    height: clamp(15rem, 13.027rem + 8.42vw, 17.063rem);
     background-image: url(../images/mainVIsual_sp.png);
     background-repeat: no-repeat;
     background-position: right top;
