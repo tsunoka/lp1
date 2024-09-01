@@ -705,3 +705,15 @@ li {
 #price td .letter-big{
     font-size: 30px;
 }
+
+@media(min-width:768px){
+    #price table{
+        width:fit-content;
+    }
+    #price td:nth-child(1){
+        padding:1.25rem 2.5rem;
+    }
+    #price td:nth-child(2){
+        padding:1.25rem 9.625rem;
+    }
+}
