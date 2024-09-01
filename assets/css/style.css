@@ -481,6 +481,7 @@ a:hover .button::after{
 
 .buttons-container .button {
     width: 15.625rem;
+    text-align: center;
     white-space: nowrap;
     box-sizing: border-box;
 }
@@ -495,7 +496,6 @@ a:hover .button::after{
     }
 
     .buttons-container .button {
-        text-align: center;
         font-size: clamp(.813rem, .313rem + 1.04vw, 1.563rem);
         width: clamp(12.25rem, 6.25rem + 12.5vw, 21.25rem);
         padding: clamp(.563rem, .104rem + .95vw, 1.25rem) clamp(1.25rem, .833rem + .87vw, 1.875rem);
