@@ -60,7 +60,7 @@ li {
 }
 
 .container {
-    margin: 3.25rem 1.625rem;
+    margin: 3.25rem clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
 }
 
 /*PC*/
@@ -182,7 +182,7 @@ li {
 .header-title {
     color: #005BAC;
     font-size: 1.4375rem;
-    padding-left: 0.9375rem;
+    padding-left: clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem); /*containerのmargin(横)と同値*/
     margin: auto 0;
     letter-spacing: -0.0313rem;
 }
@@ -340,10 +340,8 @@ li {
 
 /*カバー左側の部分*/
 .cover-left-container {
-    margin-left: auto;
     margin-top: 0.3125rem;
-    margin-right: 60%;
-    padding-left: 4%;
+    padding-left: clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
     white-space: nowrap;
     box-sizing: border-box;
     padding-top: 1.8125rem;
