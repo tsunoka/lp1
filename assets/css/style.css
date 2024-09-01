@@ -335,7 +335,7 @@ li {
 @media(min-width:768px) {
     .cover {
         background-image: url(../images/mainVIsual_pc.png);
-        height: min-content;
+        height: 30vw;
         margin-top: 6.5rem;
     }
 
