@@ -338,7 +338,7 @@ li {
 .cover {
     margin-top: 4.375rem;
     height: clamp(15rem, 13.027rem + 8.42vw, 17.063rem);
-    background-image: url(../images/mainVIsual_sp.png);
+    background-image: url(../images/mv_sp_02.jpg);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
@@ -357,7 +357,7 @@ li {
 @media(min-width:768px) {
     .cover {
         margin-top: 6.5rem;
-        background-image: url(../images/mainVIsual_pc.png);
+        background-image: url(../images/mv_pc_03.jpg);
         height: 34vw;
     }
 
@@ -778,11 +778,11 @@ li {
 }
 
 .footer-button.faq a {
-    background-image: url("../images/pht_qa.png");
+    background-image: url("../images/footer_faq_18.jpg");
 }
 
 .footer-button.search-classroom a {
-    background-image: url("../images/pht_classrooms.png");
+    background-image: url("../images/footer_classroom_17.jpg");
 }
 
 .footer-button p {
