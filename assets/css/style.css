@@ -725,14 +725,29 @@ li {
 ------------------------------------------ */
 
 /*ボタン２種*/
+.footer-button{
+    width: 100%;
+}
+
 .footer-button a{
-    width:100%;
     height:clamp(10.625rem, 2.852rem + 33.16vw, 18.75rem);
     background-size:cover;
     background-position:bottom;
     display:flex;
     align-items: center;
     padding-left:20px;
+}
+
+/*PC*/
+@media(min-width:768px){
+
+    .footer-buttons-container{
+        display: flex;
+    }
+
+    .footer-button a{
+        justify-content: center;
+    }
 }
 
 .footer-button.faq a{
@@ -748,6 +763,12 @@ li {
     font-size: 20px;
     text-shadow: rgba(0, 0, 0, 16%) 0 0 4px;
 }
+/*PC*/
+@media(min-width:768px){
+    .footer-button p{
+        font-size: 1.875rem;
+    }
+}
 
 
 /*権利表記*/
@@ -760,4 +781,10 @@ li {
 .footer-copyright p{
     font-size: 14px;
     margin:30px auto;
+}
+/*PC*/
+@media(min-width:768px){
+    .footer-copyright p{
+        margin:50px auto;
+    }
 }
