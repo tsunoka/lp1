@@ -720,3 +720,44 @@ li {
         padding:1.25rem 9.625rem;
     }
 }
+
+/* footer
+------------------------------------------ */
+
+/*ボタン２種*/
+.footer-button{
+    width:100%;
+    height:clamp(10.625rem, 2.852rem + 33.16vw, 18.75rem);
+    background-size:cover;
+    background-position:bottom;
+    display:flex;
+    align-items: center;
+    padding-left:20px;
+}
+
+.footer-button.faq{
+    background-image: url("../images/pht_qa.png");
+}
+
+.footer-button.search-classroom{
+    background-image: url("../images/pht_classrooms.png");
+}
+
+.footer-button p{
+    color: #fff;
+    font-size: 20px;
+    text-shadow: rgba(0, 0, 0, 16%) 0 0 4px;
+}
+
+
+/*権利表記*/
+.footer-copyright{
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.footer-copyright p{
+    font-size: 14px;
+    margin:30px auto;
+}
