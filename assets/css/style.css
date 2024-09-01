@@ -182,7 +182,8 @@ li {
 .header-title {
     color: #005BAC;
     font-size: 1.4375rem;
-    padding-left: clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem); /*containerのmargin(横)と同値*/
+    padding-left: clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
+    /*containerのmargin(横)と同値*/
     margin: auto 0;
     letter-spacing: -0.0313rem;
 }
@@ -292,7 +293,7 @@ li {
 
     .header-nav-container {
         position: static;
-        background-color:transparent;
+        background-color: transparent;
         opacity: 1;
         visibility: visible;
         display: flex;
@@ -310,7 +311,7 @@ li {
         padding-right: 30px;
     }
 
-    .header-menu-text{
+    .header-menu-text {
         font-size: clamp(13.008px, 0.563rem + 0.52vw, 19.008px);
         letter-spacing: 0.0625rem;
         margin-left: 0;
@@ -320,7 +321,7 @@ li {
 
     .header-nav-button {
         display: inline-block;
-        color:#fff;
+        color: #fff;
         background: linear-gradient(to right, #0271E0, #53A2F0);
         width: clamp(10rem, 5.042rem + 10.33vw, 17.438rem);
         height: clamp(2.5rem, 1.458rem + 2.17vw, 4.063rem);
@@ -778,11 +779,21 @@ li {
 }
 
 .footer-button.faq a {
-    background-image: url("../images/footer_faq_18.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 30%),rgba(0, 0, 0, 30%)), url("../images/footer_faq_sp_19.jpg");
 }
 
 .footer-button.search-classroom a {
-    background-image: url("../images/footer_classroom_17.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 30%),rgba(0, 0, 0, 30%)), url("../images/footer_classroom_sp_20.jpg");
+}
+
+@media(min-width:768px) {
+    .footer-button.faq a {
+        background-image: url("../images/footer_faq_pc_17.jpg");
+    }
+
+    .footer-button.search-classroom a {
+        background-image: url("../images/footer_classroom_pc_18.jpg");
+    }
 }
 
 .footer-button p {
