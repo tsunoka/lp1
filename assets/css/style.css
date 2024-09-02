@@ -27,6 +27,8 @@ body {
 }
 
 a {
+    width: 100%;
+    height: 100%;
     color: #000;
     text-decoration: none;
 }
@@ -52,7 +54,7 @@ li {
 /* 使いまわすもの
 ------------------------------------------ */
 
-.button {
+.button{
     border-radius: 3rem;
     padding: .625rem 1.25rem;
     margin: .3125rem auto;
@@ -60,7 +62,7 @@ li {
     overflow: hidden;
 }
 
-a:hover .button{
+a:hover .button,{
     opacity: .6;
 }
 
@@ -184,13 +186,16 @@ a:hover .button{
     box-shadow: 0 0 .625rem rgba(0, 0, 0, 20%);
 }
 
-.header-title {
-    color: #005BAC;
+.header-title  {
     font-size: 1.4375rem;
     padding-left: clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
     /*containerのmargin(横)と同値*/
     margin: auto 0;
     letter-spacing: -.0313rem;
+}
+
+.header-title a{
+    color: #005BAC;
 }
 
 @media(min-width:768px) {
@@ -222,7 +227,7 @@ a:hover .button{
     color: #fff;
 }
 
-.drawer-menu-container {
+.drawer-menu-container{
     z-index: 2;
     position: fixed;
     top: 4.375rem;
@@ -256,7 +261,7 @@ a:hover .button{
     line-height: .3625rem;
 }
 
-.drawer-menu-button {
+.drawer-menu-button a{
     background-color: #fff;
     color: #005BAC;
     display: block;
@@ -265,7 +270,9 @@ a:hover .button{
     width: 90%;
     box-sizing: border-box;
     font-size: 1.125rem;
+    text-align: center;
 }
+
 
 /* スライドイン後の位置の指定 */
 .drawer-menu-active {
@@ -302,6 +309,7 @@ a:hover .button{
         opacity: 1;
         visibility: visible;
         display: flex;
+        align-items: center;
         height: 6.5rem;
         column-gap: clamp(0rem, -.625rem + 1.3vw, .938rem);
     }
@@ -311,7 +319,6 @@ a:hover .button{
         align-items: center;
         column-gap: clamp(19.008px, -.021rem + 2.52vw, 3rem);
         box-sizing: border-box;
-        margin-top: .25rem;
         padding-left: 10px;
         padding-right: 30px;
     }
@@ -324,16 +331,22 @@ a:hover .button{
 
     }
 
-    .header-nav-button {
-        display: inline-block;
-        color: #fff;
+    .header-nav-button a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: linear-gradient(to right, #0271E0, #53A2F0);
         width: clamp(10rem, 5.042rem + 10.33vw, 17.438rem);
         height: clamp(2.5rem, 1.458rem + 2.17vw, 4.063rem);
-        box-sizing: border-box;
         font-size: clamp(.75rem, .417rem + .69vw, 1.25rem);
+        color: #fff;
+        margin: auto;
         padding: 0;
-        margin: auto 0;
+        box-sizing: border-box;
+    }
+
+    .header-nav-button:hover{
+        opacity: .6;
     }
 }
 
