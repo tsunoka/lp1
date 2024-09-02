@@ -57,13 +57,17 @@ li {
     margin: 3.25rem clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
 }
 
-/*マウスオーバー時、画像を拡大*/
+
+/*マウスオーバー時、画像を拡大(PC表示時)*/
+
+@media(min-width:768px){
 .expantion-img {
     transition: transform 0.4s;
 }
 
 .expantion-img:hover {
     transform: scale(1.2);
+}
 }
 
 
@@ -839,9 +843,6 @@ li {
     transition: transform .4s;
 }
 
-.expantion-img-footer:hover::after{
-    transform: scale(1.2);
-}
 
 .footer-button.faq a::after {
     background-image: url("../images/footer_faq_sp_19.jpg");
@@ -852,7 +853,9 @@ li {
 }
 
 @media(min-width:768px) {
-
+    .expantion-img-footer:hover::after{
+        transform: scale(1.2);
+    }
 
     .footer-button.faq a::after {
         background-image: url("../images/footer_faq_pc_17.jpg");
