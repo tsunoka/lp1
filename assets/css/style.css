@@ -57,20 +57,6 @@ li {
     margin: 3.25rem clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
 }
 
-
-/*マウスオーバー時、画像を拡大(PC表示時)*/
-
-@media(min-width:768px){
-.expantion-img {
-    transition: transform 0.4s;
-}
-
-.expantion-img:hover {
-    transform: scale(1.2);
-}
-}
-
-
 /*PC*/
 @media(min-width:768px) {
     .container {
@@ -135,6 +121,18 @@ li {
 .bi-arrow-right-short {
     font-size: 1.5625rem;
 }
+
+/*マウスオーバー時、画像を拡大(PC表示時)*/
+@media(min-width:768px){
+    .expantion-img {
+        transition: transform 0.4s;
+    }
+
+    .expantion-img:hover {
+        transform: scale(1.2);
+    }
+    }
+
 
 /*フォント
 --------------------------------------*/
