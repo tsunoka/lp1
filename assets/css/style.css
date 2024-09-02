@@ -62,7 +62,7 @@ li {
     overflow: hidden;
 }
 
-a:hover .button,{
+a:hover .button{
     opacity: .6;
 }
 
