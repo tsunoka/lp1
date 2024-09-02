@@ -55,6 +55,7 @@ li {
 
 /*マウスオーバー時、画像を拡大*/
 .expantion-img:hover{
+    /*transform:scale(1.2);*/
     background-size: auto 120%;
 }
 
