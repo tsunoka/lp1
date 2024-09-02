@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    display:block;
+    display: block;
     width: 100%;
     height: 100%;
     color: #000;
@@ -40,7 +40,7 @@ li {
 /* 使いまわすもの
 ------------------------------------------ */
 
-.button a{
+.button a {
     border-radius: 3rem;
     padding: .625rem 1.25rem;
     margin: .3125rem auto;
@@ -49,19 +49,23 @@ li {
 }
 
 .button a:hover,
-.footer-button a:hover{
+.footer-button a:hover {
     opacity: .6;
-}
-
-/*マウスオーバー時、画像を拡大*/
-.expantion-img:hover{
-    /*transform:scale(1.2);*/
-    background-size: auto 120%;
 }
 
 .container {
     margin: 3.25rem clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
 }
+
+/*マウスオーバー時、画像を拡大*/
+.expantion-img {
+    transition: transform 0.4s;
+}
+
+.expantion-img:hover {
+    transform: scale(1.2);
+}
+
 
 /*PC*/
 @media(min-width:768px) {
@@ -96,16 +100,17 @@ li {
     margin-bottom: .625rem;
 }
 
-.briefing-request-button{
+.briefing-request-button {
     width: 100%;
     box-sizing: border-box;
 }
 
-.briefing-request-button a{
+.briefing-request-button a {
     background: linear-gradient(to right, #0271E0, #53A2F0);
     display: block;
-    width: 100%; /*すべてのaに設定したい*/
-    height:100%;
+    width: 100%;
+    /*すべてのaに設定したい*/
+    height: 100%;
     font-size: 1.25rem;
     padding: 1.25rem 0;
 }
@@ -115,7 +120,7 @@ li {
         padding: 3.125rem 0;
     }
 
-    .briefing-request-button{
+    .briefing-request-button {
         display: inline-block;
         width: 21.875rem;
     }
@@ -188,7 +193,7 @@ li {
     box-shadow: 0 0 .625rem rgba(0, 0, 0, 20%);
 }
 
-.header-title  {
+.header-title {
     font-size: 1.4375rem;
     padding-left: clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
     /*containerのmargin(横)と同値*/
@@ -196,7 +201,7 @@ li {
     letter-spacing: -.0313rem;
 }
 
-.header-title a{
+.header-title a {
     color: #005BAC;
 }
 
@@ -229,7 +234,7 @@ li {
     color: #fff;
 }
 
-.drawer-menu-container{
+.drawer-menu-container {
     z-index: 2;
     position: fixed;
     top: 4.375rem;
@@ -263,7 +268,7 @@ li {
     line-height: .3625rem;
 }
 
-.drawer-menu-button a{
+.drawer-menu-button a {
     background-color: #fff;
     color: #005BAC;
     display: block;
@@ -333,7 +338,7 @@ li {
 
     }
 
-    .header-nav-button a{
+    .header-nav-button a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -482,7 +487,7 @@ li {
     row-gap: .4375rem;
 }
 
-.buttons-container .button{
+.buttons-container .button {
     width: 15.625rem;
     text-align: center;
     white-space: nowrap;
@@ -498,7 +503,7 @@ li {
         padding: 1.25rem 0;
     }
 
-    .buttons-container .button{
+    .buttons-container .button {
         font-size: clamp(.813rem, .313rem + 1.04vw, 1.563rem);
         width: clamp(12.25rem, 6.25rem + 12.5vw, 21.25rem);
         padding: clamp(.563rem, .104rem + .95vw, 1.25rem) clamp(1.25rem, .833rem + .87vw, 1.875rem);
@@ -715,17 +720,20 @@ li {
 }
 
 
-.course-tab-content-item{
-    position:static;
+.course-tab-content-item {
+    position: static;
 }
 
-.course-tab-content-img img{
+.course-tab-content-img {
     border-radius: 1rem;
+    overflow: hidden;
 }
 
-.course-tab-content-item > a:hover .course-tab-content-img{
+
+.course-tab-content-item>a:hover .course-tab-content-img {
     opacity: .6;
 }
+
 /* price
 ------------------------------------------ */
 
@@ -781,16 +789,17 @@ li {
 /* footer
 ------------------------------------------ */
 
-.footer-buttons-container{
+.footer-buttons-container {
     width: 100%;
 }
 
 /*ボタン２種*/
 .footer-button {
     height: clamp(10.625rem, 2.852rem + 33.16vw, 18.75rem);
+    overflow: hidden;
 }
 
-.footer-button a{
+.footer-button a::after {
     width: 100%;
     background-size: cover;
     background-position: bottom;
@@ -807,31 +816,60 @@ li {
 
     }
 
-    .footer-button{
+    .footer-button {
         width: 100%;
         justify-content: center;
     }
 }
 
-.footer-button.faq a{
+.footer-button .expantion-img-footer{
+    position: relative;
+    overflow:hidden;
+}
+
+/*a(.expantion-img)::afterに背景画像を設定*/
+.footer-button .expantion-img-footer::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    transition: transform .4s;
+}
+
+.expantion-img-footer:hover::after{
+    transform: scale(1.2);
+}
+
+.footer-button.faq a::after {
     background-image: url("../images/footer_faq_sp_19.jpg");
 }
 
-.footer-button.search-classroom a{
-    background-image:  url("../images/footer_classroom_sp_20.jpg");
+.footer-button.search-classroom a::after {
+    background-image: url("../images/footer_classroom_sp_20.jpg");
 }
 
 @media(min-width:768px) {
-    .footer-button.faq a{
+
+
+    .footer-button.faq a::after {
         background-image: url("../images/footer_faq_pc_17.jpg");
     }
 
-    .footer-button.search-classroom a{
+    .footer-button.search-classroom a::after {
         background-image: url("../images/footer_classroom_pc_18.jpg");
     }
 }
 
-.footer-button p {
+.footer-button-heading {
+    z-index: 1;
+    position: relative;
+    display:flex;
+    height:100%;
+    align-items: center;
+    display: flex;
     padding-left: 20px;
     color: #fff;
     font-size: 20px;
@@ -840,7 +878,7 @@ li {
 
 /*PC*/
 @media(min-width:768px) {
-    .footer-button p {
+    .footer-button-heading {
         font-size: 1.875rem;
     }
 }
