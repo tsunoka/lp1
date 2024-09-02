@@ -54,7 +54,7 @@ li {
 }
 
 .container {
-    margin: 3.25rem clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
+    margin: 3.25rem clamp(1rem, -4.022rem + 21.43vw, 6.25rem);
 }
 
 /*PC*/
@@ -91,8 +91,9 @@ li {
 }
 
 .briefing-request-button {
-    width: 100%;
+    width: 315px;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .briefing-request-button a {
@@ -251,9 +252,10 @@ li {
 /*ドロワーメニュー*/
 .drawer-menu li a {
     display: block;
+    width: 85%;
     color: #fff;
     border-bottom: solid 1px #fff;
-    margin: 0 1.25rem;
+    margin: 0 auto;
     padding: 1.2813rem 0;
     line-height: 1rem;
 }
@@ -275,8 +277,8 @@ li {
     color: #005BAC;
     display: block;
     margin: 2.0625rem auto;
-    padding: 1.25rem 0;
-    width: 90%;
+    padding: 1.0625rem 0;
+    width: 21.125rem;
     box-sizing: border-box;
     font-size: 1.125rem;
     text-align: center;
@@ -362,7 +364,7 @@ li {
 .cover {
     margin-top: 4.375rem;
     height: clamp(15rem, 13.027rem + 8.42vw, 17.063rem);
-    background-image: url(../images/mv_sp_02.jpg);
+    background-image: url("../images/mv_sp_02.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
@@ -381,7 +383,7 @@ li {
 @media(min-width:768px) {
     .cover {
         margin-top: 6.5rem;
-        background-image: url(../images/mv_pc_03.jpg);
+        background-image: url("../images/mv_pc_03.jpg");
         height: 34vw;
     }
 
@@ -486,7 +488,7 @@ li {
     flex-direction: column;
     align-items: center;
     margin: 1.25rem 0;
-    row-gap: .4375rem;
+    row-gap: 0.6875rem;
 }
 
 .buttons-container .button {
@@ -494,6 +496,10 @@ li {
     text-align: center;
     white-space: nowrap;
     box-sizing: border-box;
+}
+.buttons-container .button a{
+    margin:0 auto;
+    padding: 0.75rem;
 }
 
 @media(min-width:768px) {
@@ -507,8 +513,12 @@ li {
 
     .buttons-container .button {
         font-size: clamp(.813rem, .313rem + 1.04vw, 1.563rem);
-        width: clamp(12.25rem, 6.25rem + 12.5vw, 21.25rem);
+        width: clamp(12.25rem, 6.25rem + 12.5vw, 340px);
+    }
+
+    .buttons-container .button a{
         padding: clamp(.563rem, .104rem + .95vw, 1.25rem) clamp(1.25rem, .833rem + .87vw, 1.875rem);
+
     }
 
 
@@ -544,12 +554,12 @@ li {
 }
 
 .point {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .point img {
     width: 100%;
-    border-radius: 24px;
+    border-radius: 1.5rem;
 }
 
 .point-text * {
@@ -592,6 +602,15 @@ li {
 
     .point img {
         width: 48%;
+    }
+
+    .point h3{
+        font-size:1.875rem;
+    }
+
+    .point-title{
+        margin-bottom:.875rem;
+        font-size:1.5rem;
     }
 }
 
@@ -881,6 +900,8 @@ li {
 @media(min-width:768px) {
     .footer-button-heading {
         font-size: 1.875rem;
+        justify-content: center;
+        padding-left: 0;
     }
 }
 
