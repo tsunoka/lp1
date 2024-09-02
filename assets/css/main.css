@@ -257,7 +257,7 @@ li {
     border-bottom: solid 1px #fff;
     margin: 0 auto;
     padding: 1.2813rem 0;
-    line-height: 1rem;
+    line-height: 1;
 }
 
 .drawer-menu i {
@@ -269,7 +269,7 @@ li {
     font-size: 1.125rem;
     letter-spacing: .0125rem;
     margin-left: .25rem;
-    line-height: .3625rem;
+    line-height: 0.322;
 }
 
 .drawer-menu-button a {
@@ -305,7 +305,7 @@ li {
         border-bottom: none;
         margin: 0;
         padding: 0;
-        line-height: 1rem;
+        line-height: 1;
     }
 
 
@@ -410,14 +410,13 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 2.0625rem;
-    margin-top: -.3125rem;
+    line-height: 1.5;
     font-size: .6875rem;
 }
 
 .cover-frame-inside-no-1 {
     color: #F11F8D;
-    font-size: 1.625rem;
+    font-size: 26px;
 }
 
 .cover-frame-inside-no-1 .letter-big {
@@ -433,7 +432,6 @@ li {
     .cover-frame-inside-text {
         font-size: clamp(.75rem, .417rem + .69vw, 1.25rem);
         margin: 0 clamp(.625rem, .208rem + .87vw, 1.25rem);
-        row-gap: clamp(.188rem, -1.104rem + 2.69vw, 2.125rem);
     }
 
     .cover-frame-inside-no-1 {
@@ -478,7 +476,6 @@ li {
 
     .cover-left-bottom-text {
         font-size: clamp(1.75rem, .396rem + 2.82vw, 3.781rem);
-        line-height: clamp(2.5rem, .75rem + 3.65vw, 5.125rem);
     }
 }
 
