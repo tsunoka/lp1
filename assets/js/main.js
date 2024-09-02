@@ -11,7 +11,7 @@ $('.hamburger-button').on('click', function () {
 // 画面幅のサイズが変わったら
 $(window).on('resize', function () {
     // console.log('resize');
-    // ハンバーガーメニューを閉じる
+    // ドロワーメニューを閉じる
     hamburger.removeClass('drawer-menu-active');
 });
 
@@ -23,4 +23,17 @@ $('#smarttab').smartTab({
 
 
 
-//スムーススクロール　参考：https://125naroom.com/web/2899
+//スムーススクロール
+$(function () {
+    $('a[href^="#"]').click(function () {
+        hamburger.removeClass('drawer-menu-active');
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        var speed = 500;
+        $("html, body").animate({
+            scrollTop: position
+        }, speed, "swing");
+        return false;
+    });
+});
