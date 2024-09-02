@@ -63,7 +63,8 @@ li {
     overflow: hidden;
 }
 
-.button a:hover{
+.button a:hover,
+.footer-button a:hover{
     opacity: .6;
 }
 
@@ -403,7 +404,6 @@ li {
 /*合格実績No.1(cover-left-top)*/
 .cover-frame {
     height: 72px;
-    /*min 72px*/
 }
 
 .cover-frame-inside-text {
@@ -791,25 +791,21 @@ li {
 ------------------------------------------ */
 
 .footer-buttons-container{
-    display: flex;
-}
-
-.footer-buttons-container a{
     width: 100%;
 }
 
 /*ボタン２種*/
 .footer-button {
     height: clamp(10.625rem, 2.852rem + 33.16vw, 18.75rem);
+}
+
+.footer-button a{
+    width: 100%;
     background-size: cover;
     background-position: bottom;
     display: flex;
     align-items: center;
-    padding-left: 20px;
-}
 
-a:hover .footer-button{
-    opacity: .6;
 }
 
 /*PC*/
@@ -824,25 +820,26 @@ a:hover .footer-button{
     }
 }
 
-.footer-button.faq {
+.footer-button.faq a{
     background-image: url("../images/footer_faq_sp_19.jpg");
 }
 
-.footer-button.search-classroom{
+.footer-button.search-classroom a{
     background-image:  url("../images/footer_classroom_sp_20.jpg");
 }
 
 @media(min-width:768px) {
-    .footer-button.faq{
+    .footer-button.faq a{
         background-image: url("../images/footer_faq_pc_17.jpg");
     }
 
-    .footer-button.search-classroom {
+    .footer-button.search-classroom a{
         background-image: url("../images/footer_classroom_pc_18.jpg");
     }
 }
 
 .footer-button p {
+    padding-left: 20px;
     color: #fff;
     font-size: 20px;
     text-shadow: rgba(0, 0, 0, 16%) 0 0 4px;
