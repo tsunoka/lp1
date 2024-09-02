@@ -54,7 +54,7 @@ li {
 /* 使いまわすもの
 ------------------------------------------ */
 
-.button{
+.button a{
     border-radius: 3rem;
     padding: .625rem 1.25rem;
     margin: .3125rem auto;
@@ -103,11 +103,23 @@ a:hover .button{
     margin-bottom: .625rem;
 }
 
-.briefing-request-button {
-    background: linear-gradient(to right, #0271E0, #53A2F0);
+.briefing-request-button{
     width: 100%;
+    box-sizing: border-box;
+}
+
+.briefing-request-button a{
+    background: linear-gradient(to right, #0271E0, #53A2F0);
+    display: block;
+    width: 100%; /*すべてのaに設定したい*/
+    height:100%;
     font-size: 1.25rem;
     padding: 1.25rem 0;
+}
+
+/*aが内側に入ったら統一*/
+.briefing-request-button a:hover{
+    opacity: .6;
 }
 
 @media(min-width:768px) {
@@ -115,9 +127,11 @@ a:hover .button{
         padding: 3.125rem 0;
     }
 
-    .briefing-request-button {
+    .briefing-request-button{
+        display: inline-block;
         width: 21.875rem;
     }
+
 }
 
 /*矢印アイコン*/
