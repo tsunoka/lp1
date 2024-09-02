@@ -813,9 +813,11 @@ li {
 
     .footer-buttons-container {
         display: flex;
+
     }
 
     .footer-button{
+        width: 100%;
         justify-content: center;
     }
 }
