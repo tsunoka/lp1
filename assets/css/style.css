@@ -53,6 +53,11 @@ li {
     opacity: .6;
 }
 
+/*マウスオーバー時、画像を拡大*/
+.expantion-img:hover{
+    background-size: auto 120%;
+}
+
 .container {
     margin: 3.25rem clamp(1.625rem, -2.799rem + 18.88vw, 6.25rem);
 }
