@@ -253,7 +253,7 @@ li {
     display: block;
     width: 85%;
     color: #fff;
-    border-bottom: solid .5px #fff;
+    border-bottom: solid 1px rgba(255,255,255,.5);
     margin: 0 auto;
     padding: 1.2813rem 0;
     line-height: 1;
