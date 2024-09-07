@@ -677,6 +677,12 @@ li {
     text-align: center;
     background-color: #F2F9FF;
 }
+/*PC*/
+@media(min-width:768px){
+    .tab-content{
+        border-radius: 1rem;
+    }
+}
 
 .tab.st-theme-basic>.tab-content>.tab-pane {
     flex-direction: column;
