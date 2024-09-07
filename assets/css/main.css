@@ -562,12 +562,12 @@ li {
     display: inline-block;
 }
 
-.point-text h3 {
+.point-text .point-number {
     color: #F11F8D;
     font-size: 1.5625rem;
 }
 
-.point-text h3 span {
+.point-text .point-number span {
     font-size: 2.375rem;
     margin-left: .4375rem;
 }
@@ -600,7 +600,7 @@ li {
         width: 48%;
     }
 
-    .point h3{
+    .point .point-number{
         font-size:1.875rem;
     }
 
