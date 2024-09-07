@@ -798,14 +798,20 @@ li {
         width: fit-content;
     }
 
+    #price th{
+        border: solid 1px #999;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
     /*講義数*/
     #price td:nth-child(1) {
-        padding: 1.25rem 2.5rem;
+        padding: .9rem 3rem;
     }
 
     /*価格*/
     #price td:nth-child(2) {
-        padding: 1.25rem 9.625rem;
+        padding: .9rem 9.625rem;
     }
 }
 
