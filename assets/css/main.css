@@ -253,7 +253,7 @@ li {
     display: block;
     width: 85%;
     color: #fff;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid .5px #fff;
     margin: 0 auto;
     padding: 1.2813rem 0;
     line-height: 1;
